@@ -21,7 +21,7 @@ const TweetCard = () => {
   const downloadImage = async e => {
     const dataUrl = await toPng(ref.current);
     const link = document.createElement('a')
-    link.download = "simp-card.png"
+    link.download = "cardcitof.png"
     link.href = dataUrl
     link.click();
   }
@@ -53,7 +53,7 @@ const TweetCard = () => {
                   <input type="text" value={dataName} onChange={e => setDataName(e.target.value)} id="" placeholder='Tu nombre precioso' />
               </span>
               <button className={styles.btnDownload} type='button' onClick={downloadImage} >
-                Descargar SIMP CARD
+                Descargar ENFP CARD
               </button>
             </form>
           </div>
