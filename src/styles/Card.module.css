@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+.background {
+  width: 100%;
+  background: #2D6765;
+}
+
+/* hero styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.hero h1 {
+  margin: 0 0 76px;
+  font-size: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.content_img {
+  background-image: url(/enfpcard.svg);
+  background-repeat: no-repeat;
+  width: 564px;
+  height: 362px;
+}
+
+.content_img h1 {
+  margin: 0;
+  position: relative;
+  top: 10px;
+  right: -49px;
+  font-weight: 600;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 24px;
+  color: #f5f5f5;
+}
+
+.userImage {
+  background-size: cover;
+  position: relative;
+  right: -238px;
+  top: 29px;
+}
+
+.userImage svg {
+  position: relative;
+  width: 181px;
+  height: 244px;
+  border-radius: 9px;
+}
+
+.userImage img {
+  border-radius: 9px;
+  width: 181px;
+  /*121 185*/
+  height: 244px;
+  object-fit: cover;
+}
+
+/* Form inputs */
+.formInputs {
+  margin-top: 30px;
+  position: relative;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  display: flex;
+  justify-content: center;
+}
+
+.formInputs form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.formInputs form .inputAddPhoto input {
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0;
+  width: 1px;
+}
+
+.formInputs form .inputAddPhoto label {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.formInputs form .inputAddPhoto {
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #BBBCA1;
+  flex-grow: 1;
+}
+
+.formInputs form .inputAddPhoto h2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.formInputs form .inputDataName input {
+  font-size: 17px;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  outline: none;
+  width: 400px;
+}
+
+.formInputs form .inputDataName label {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.formInputs form .inputDataName {
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #BBBCA1;
+  flex-grow: 1;
+}
+
+.formInputs form .inputDataName h2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.div_file {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btnDownload {
+  background-color: #619B97;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .5s background;
+}
+
+.btnDownload:hover {
+  color: #619B97;
+  background-color: #fff;
+}
+
+.copy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #dadada;
+  font-weight: 400;
+}
+
+/* Responsive */
+
+@media (max-width: 630px) {
+
+  .hero h1 {
+    margin: 0 0 40px;
+    font-size: 40px;
+  }
+
+  .content_img {
+    background-image: url(/enfpcard.svg);
+    background-position: center;
+    background-size: contain;
+    width: 407px;
+    height: 268px;
+  }
+
+  .userImage {
+    position: relative;
+    top: -29px;
+    right: -172px;
+  }
+
+  .userImage svg {
+    position: relative;
+    width: 131px;
+    height: 176px;
+  }
+
+  .userImage img {
+    width: 131px;
+    height: 176px;
+    object-fit: cover;
+  }
+
+  .content_img h1 {
+    top: 4px;
+    right: -35px;
+    font-size: 17px;
+  }
+
+  .formInputs form .inputDataName input {
+    width: 300px;
+  }
+
+  .div_file {
+    gap: 90px;
+  }
+}
+
+@media (max-width: 470px) {
+  .formInputs form .inputDataName input {
+    width: 260px;
+  }
+
+  .div_file {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .content_img {
+    background-image: url(/enfpcard.svg);
+    background-position: center;
+    background-size: contain;
+    width: 348px;
+    height: 224px;
+  }
+
+  .content_img h1 {
+    top: -4.5px;
+    right: -31px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .userImage {
+    position: relative;
+    top: -40px;
+    right: -146px;
+  }
+
+  .userImage svg {
+    border-radius: 6px;
+    position: relative;
+    width: 111.5px;
+    height: 150px;
+  }
+
+  .userImage img {
+    border-radius: 6px;
+    width: 111.5px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .formInputs form .inputDataName input {
+    width: 240px;
+  }
+
+  .div_file {
+    gap: 60px;
+  }
+}
+
+
+
+@media (max-width: 370px) {
+  .btnDownload {
+    background-color: #619B97;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .formInputs form .inputDataName input {
+    width: 160px;
+  }
+
+  .div_file {
+    gap: 20px;
+  }
+}
