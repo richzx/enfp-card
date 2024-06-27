@@ -58,7 +58,7 @@ const TweetCard = () => {
             </form>
           </div>
         </div>
-          <div className={styles.copy} >© - richarodz</div>
+        <div className={styles.copy} ><a href="https://portfoliorodgz-designer.vercel.app/">© - richarodz</a></div>
     </>
   )
 }

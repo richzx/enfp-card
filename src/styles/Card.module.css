@@ -174,8 +174,12 @@
   justify-content: center;
   padding-bottom: 10px;
   font-size: 16px;
-  color: #dadada;
   font-weight: 400;
+}
+
+.copy a{
+  color: #dadada;
+  text-decoration: none;
 }
 
 /* Responsive */
